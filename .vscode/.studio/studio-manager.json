@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "condition": "always",
+      "commandType": "vscode",
+      "command": "studio-manager.openFile public/index.php 1",
+      "cmdArgs": []
+    },
+    {
+      "condition": "always",
+      "commandType": "vscode",
+      "command": "studio-manager.openSimpleBrowser https://${STUDIO_HOST_ID}-8080.${STUDIO_HOST}",
+      "delay": 2500
+    },
+    {
+      "condition": "always",
+      "commandType": "vscode",
+      "command": "studio-manager.openTerminal",
+      "cmdArgs": [
+        "php -S 0.0.0.0:8080 -t public",
+        {
+          "name": "php",
+          "location": 1
+        }
+      ],
+      "delay": 200
+    }
+  ]
+}
