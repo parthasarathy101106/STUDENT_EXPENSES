@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // BASE_URL for ByteXL proxy
 if (!defined('BASE_URL')) {
     $h = $_SERVER['HTTP_HOST'] ?? '';
