@@ -1,5 +1,7 @@
 FROM php:8.4-cli-alpine
 
+RUN docker-php-ext-install mysqli pdo_mysql
+
 WORKDIR /app
 
 COPY . .
